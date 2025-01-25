@@ -18,7 +18,7 @@ img {
 
 /* Navbar Styles */
 .navbar {
-    background-color: black;
+    background-color: aqua;
     color: white;
     display: flex;
     align-items: center;
@@ -47,6 +47,23 @@ img {
 .border:hover {
     border: 1.5px solid white;
 }
+
+
+/*main frame*/
+.mainframe {
+    width: 100%; /* Full width */
+    height: calc(100vh - 100px); /* Full screen height minus header and footer (adjust based on actual header/footer height) */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: #f5f5f5; /* Light background color */
+    padding: 20px; /* Add some padding */
+    /* box-sizing: border-box; Include padding in width/height calculation */
+}
+
+
+
+
 
 /* Footer Styles */
 footer {
@@ -90,6 +107,12 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+.foot-panel3 img {
+    max-height: 80px; /* Set a maximum height */
+    max-width: 150px; /* Set a maximum width */
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .foot-panel3 .logo img {
