@@ -1,0 +1,245 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo img {
+    height: 50px;
+}
+
+.nav_items {
+    display: flex;
+    gap: 10rem;
+}
+
+.nav_items a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav_items a:hover {
+    color: #ffdd57;
+}
+
+/* Main content area styles */
+.mainframe {
+    text-align: center;
+    padding: 50px;
+    background-color: #ecf0f1;
+}
+
+.mainframe h1 {
+    font-size: 3em;
+    color: #2c3e50;
+}
+
+.mainframe p {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-top: 20px;
+}
+
+.mainframe button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #ecf0f1;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.mainframe button:hover {
+    background-color: #c0392b;
+}
+
+/* Disaster Section Styles */
+.disaster-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.box {
+    width: 22%; /* Set the default width of the boxes */
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.box-img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.box h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.box p:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        width: 48%; /* 2 items per row for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%; /* 1 item per row for small screens */
+    }
+}
+
+/* Button styles */
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.learn-more-btn:hover {
+    background-color: #cc5200;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 20px 0;
+}
+
+.foot-panel1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.back-to-top {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    background: #e74c3c;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background: #c0392b;
+}
+
+.foot-panel2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.foot-panel2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot-panel2 p {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.foot-panel2 a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+    transition: color 0.3s;
+}
+
+.foot-panel2 a:hover {
+    color: #ffdd57;
+}
+
+.foot-panel3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.foot-panel3 img {
+    height: 50px;
+}
+
+.foot-panel4 {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.foot-panel4 a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.foot-panel4 a:hover {
+    color: #ffdd57;
+}
+
+.copyright {
+    margin-top: 10px;
+}
